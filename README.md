@@ -8,7 +8,7 @@ SEONIdVerification Android SDK is a framework designed to streamline the identit
 
 ## Installation
 
-SEONIdVerification is available through Jitpack Repository (https://jitpack.io/). To install it, follow these steps:
+SEONIdVerification is available through Maven Central Repository. To install it, follow these steps:
 
 ##### If you are using kotlin version catalogs
 
@@ -18,7 +18,9 @@ SEONIdVerification is available through Jitpack Repository (https://jitpack.io/)
 dependencyResolutionManagement {
     repositories {
         ...
-        maven { url = uri("https://jitpack.io") }
+        mavenCentral()
+    }
+}
 ```
 - Add these lines under the proper section in the `libs.versions.toml`:
 
@@ -38,6 +40,7 @@ seon-id-verification = { group = "com.github.seontechnologies", name = "id-verif
 dependencies {
     ...
     implementation(libs.seon.id.verification)
+}
 ```
 
 - You can now run gradle sync.
@@ -53,7 +56,9 @@ dependencies {
 allprojects {
     repositories {
         ...
-        maven { url "https://jitpack.io" }
+        mavenCentral()
+    }
+}
 ```
 
 - And add this line to the module level (eg. app) `build.gradle(.kts)`:
@@ -62,6 +67,7 @@ allprojects {
 dependencies {
     ...
     implementation "com.github.seontechnologies:id-verification-sdk-android:0.7.4"
+}
 ```
 
 - You can now run gradle sync.
@@ -84,7 +90,7 @@ IDVService.instance.initialize(
     baseUrl = "https://example.url/", // use the baseUrl you received from SEON
     customerData = IDVCustomerData(licenseKey = "0a1b3c4d5e"), // use the licenseKey you received from SEON,
     templateId = null, // Optional. Use the templateId if you have defined a template in the admin panel
-    languageCode = "en" // use the language iso code you prefer to use in the SDK. If not provided, we fall back on the default Locale language of the app, and finally on our default langugae, which is English (for the available languages please contact SEON)
+    languageCode = "en" // use the language iso code you prefer to use in the SDK. If not provided, we fall back on the default Locale language of the app, and finally on our default language, which is English (for the available languages please contact SEON)
 )
 ```
 
