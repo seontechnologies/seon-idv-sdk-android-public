@@ -27,11 +27,11 @@ dependencyResolutionManagement {
 ```
 [versions]
 ...
-seonIdVerification = "0.7.4"
+seonIdVerification = "1.0.3"
 ...
 [libraries]
 ...
-seon-id-verification = { group = "com.github.seontechnologies", name = "id-verification-sdk-android", version.ref = "seonIdVerification" }
+seon-id-verification = { group = "io.seon.idvandroid", name = "id-verification-sdk-android", version.ref = "seonIdVerification" }
 ```
 
 - And add this into your module level (eg. app) `build.gradle.kts`:
@@ -169,6 +169,9 @@ IDVService.instance.setThemeColors(
 
 # Changelog
 
+## 1.0.3
+-   Liveness as a Standalone Project
+-   Minor improvements and bugfixes
 ## 0.7.4
 -   Some minor improvements on Liveness Check
 -	Initial version on Maven
