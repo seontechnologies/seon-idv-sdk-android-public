@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 ```
 [versions]
 ...
-seonIdVerification = "1.0.3"
+seonIdVerification = "1.2.0"
 ...
 [libraries]
 ...
@@ -168,6 +168,9 @@ IDVService.instance.setThemeColors(
 ------------
 
 # Changelog
+
+## 1.2.0
+-   Made referenceId required in the CustomerData
 
 ## 1.0.3
 -   Liveness as a Standalone Project
