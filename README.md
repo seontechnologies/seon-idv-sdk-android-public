@@ -66,7 +66,7 @@ allprojects {
 ```
 dependencies {
     ...
-    implementation "com.github.seontechnologies:id-verification-sdk-android:0.7.4"
+    implementation "io.seon.idvandroid:id-verification-sdk-android:1.2.0"
 }
 ```
 
