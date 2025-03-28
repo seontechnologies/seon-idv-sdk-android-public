@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 ```
 [versions]
 ...
-seonIdVerification = "1.2.0"
+seonIdVerification = "1.3.0"
 ...
 [libraries]
 ...
@@ -168,6 +168,10 @@ IDVService.instance.setThemeColors(
 ------------
 
 # Changelog
+
+## 1.3.0
+-   Name, ZipCode, DateOfBirth Validation
+-   Minor improvements
 
 ## 1.2.0
 -   Made referenceId required in the CustomerData
