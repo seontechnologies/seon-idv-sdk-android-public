@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 ```
 [versions]
 ...
-seonIdVerification = "1.3.0"
+seonIdVerification = "1.4.0"
 ...
 [libraries]
 ...
@@ -66,7 +66,7 @@ allprojects {
 ```
 dependencies {
     ...
-    implementation "io.seon.idvandroid:id-verification-sdk-android:1.2.0"
+    implementation "io.seon.idvandroid:id-verification-sdk-android:1.4.0"
 }
 ```
 
@@ -168,6 +168,11 @@ IDVService.instance.setThemeColors(
 ------------
 
 # Changelog
+
+## 1.4.0
+-   Improvements on Liveness Verification Check
+-   Better visibility with descriptive error handling in the SDK session
+-   Minor improvements
 
 ## 1.3.0
 -   Name, ZipCode, DateOfBirth Validation
