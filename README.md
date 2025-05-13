@@ -165,6 +165,8 @@ IDVService.instance.setThemeColors(
 )
 ```
 
+- For the error codes and how to resolve them, please refer to [this page](ErrorCodes.md).
+
 ------------
 
 # Changelog
