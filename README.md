@@ -18,6 +18,7 @@ SEONIdVerification is available through Maven Central Repository. To install it,
 dependencyResolutionManagement {
     repositories {
         ...
+        maven { url = uri("https://maven.microblink.com") }
         mavenCentral()
     }
 }
