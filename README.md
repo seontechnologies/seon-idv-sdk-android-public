@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 ```
 [versions]
 ...
-seonIdVerification = "1.4.1"
+seonIdVerification = "1.4.2"
 ...
 [libraries]
 ...
@@ -56,6 +56,7 @@ dependencies {
 allprojects {
     repositories {
         ...
+        maven { url = uri("https://maven.microblink.com") }
         mavenCentral()
     }
 }
@@ -170,6 +171,10 @@ IDVService.instance.setThemeColors(
 ------------
 
 # Changelog
+
+## 1.4.2
+-   Fixed misconfigurations on Proguard
+-   Minor improvements
 
 ## 1.4.1
 -   Improvements on Liveness Verification Check
