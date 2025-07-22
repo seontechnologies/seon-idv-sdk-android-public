@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 ```
 [versions]
 ...
-seonIdVerification = "1.4.2"
+seonIdVerification = "1.5.0"
 ...
 [libraries]
 ...
@@ -155,7 +155,8 @@ private fun handleResult(result: ActivityResult) {
 }
 ```
 
-- You could also customize the SDK main colors through the IDVService class setThemeColors(...) method (the pair's first parameter is for light color, second is for dark color theme), please call it before you start the flow, but the best would be to call this even before the initialize(...) method is called
+- You could also customize the SDK main colors through the IDVService class setThemeColors(...) method (the pair's first parameter is for light color, second is for dark color theme), please call it before you start the flow, but the best would be to call this even before the initialize(...) method is called.
+- You may also want to set custom Fonts and customize Watermark image or hide it.
 
 ```
 IDVService.instance.setThemeColors(
@@ -164,6 +165,19 @@ IDVService.instance.setThemeColors(
     accent = Pair(getColor(R.color.purple), getColor(R.color.purple)),
     onAccent = Pair(getColor(R.color.black), getColor(R.color.white)),
 )
+
+IDVService.instance.setCustomFonts(
+    Font(R.font.custom_regular_font),
+    Font(R.font.custom_semibold_font),
+    Font(R.font.custom_bold_font)
+)
+
+IDVService.instance.setWatermarkImageVisibility(false) // To hide SEON/Custom Watermark
+
+val drawable = getDrawable(R.drawable.custom_watermark_image)
+if (drawable != null) {
+    IDVService.instance.setWatermarkImage(drawable) // Set custom watermark
+}
 ```
 
 - For the error codes and how to resolve them, please refer to [this page](ErrorCodes.md).
@@ -171,6 +185,11 @@ IDVService.instance.setThemeColors(
 ------------
 
 # Changelog
+
+## 1.5.0
+-   Upgraded the Document Verification SDK, which improves UX and verification results
+-   White-labeling the SDK. Now you can modify fonts and watermarks on the SDK flow
+-   Minor improvements
 
 ## 1.4.2
 -   Fixed misconfigurations on Proguard
