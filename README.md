@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 ```
 [versions]
 ...
-seonIdVerification = "1.5.0"
+seonIdVerification = "1.6.1"
 ...
 [libraries]
 ...
@@ -185,6 +185,9 @@ if (drawable != null) {
 ------------
 
 # Changelog
+
+## 1.6.1
+-   The SDK now supports 16KB page sizes
 
 ## 1.5.0
 -   Upgraded the Document Verification SDK, which improves UX and verification results
