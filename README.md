@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 ```
 [versions]
 ...
-seonIdVerification = "1.5.0"
+seonIdVerification = "1.6.2"
 ...
 [libraries]
 ...
@@ -67,7 +67,7 @@ allprojects {
 ```
 dependencies {
     ...
-    implementation "io.seon.idvandroid:id-verification-sdk-android:1.4.1"
+    implementation "io.seon.idvandroid:id-verification-sdk-android:1.6.2"
 }
 ```
 
@@ -185,6 +185,14 @@ if (drawable != null) {
 ------------
 
 # Changelog
+
+## 1.6.2
+-   Fixed an issue with Camera on Proof-of-Address step.
+
+## 1.6.1
+-   Added 16 KB page size support to ensure Google Play compatibility beyond November 1st, 2025.
+    - SEON ID Verification Android SDK is fully compatible with 16 KB page size from this version (`1.6.1`).
+    - There are more requirements to be 16 KB page size compatible. Please carefully read the [Google documentation](https://developer.android.com/guide/practices/page-sizes).
 
 ## 1.5.0
 -   Upgraded the Document Verification SDK, which improves UX and verification results
