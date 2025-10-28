@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 ```
 [versions]
 ...
-seonIdVerification = "1.6.2"
+seonIdVerification = "1.6.3"
 ...
 [libraries]
 ...
@@ -67,7 +67,7 @@ allprojects {
 ```
 dependencies {
     ...
-    implementation "io.seon.idvandroid:id-verification-sdk-android:1.6.2"
+    implementation "io.seon.idvandroid:id-verification-sdk-android:1.6.3"
 }
 ```
 
@@ -185,6 +185,9 @@ if (drawable != null) {
 ------------
 
 # Changelog
+
+## 1.6.3
+-   Fixed an issue with Liveness Verification step.
 
 ## 1.6.2
 -   Fixed an issue with Camera on Proof-of-Address step.
